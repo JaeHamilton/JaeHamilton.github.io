@@ -1,138 +1,115 @@
-/* 
-Lab: Basics Grids and Flexbox
-=== Do not change CSS below === 
-*/
-
-
-* {
-    box-sizing: border-box;
-}
-
-body {
+*/===Typography===*/ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 14pt;
     line-height: 18pt;
-    background-color: #e0ff9e;
-    padding: 0;
-    margin: 0;
-    color: #052e00;
-
-}
-
-header {
-    padding: 40px 20px 40px 20px;
-    background-color: #9eb56e;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    padding: 0 50px;
-    background-color: #9eb56e;
+    color: #000000;
 }
 
 nav a {
-    margin-right: 5px;
-}
-
-a {
+    color: #FFFFFF;
     text-decoration: none;
-    color: #1d7072;
+
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 42pt;
-    color: #1d7072;
-    margin: 0 0;
+    font-family: font-family: 'Teko', sans-serif;
+    font-size: 72pt;
+    line-height: 18pt;
+    color: #000000;
 }
 
-
-.splash {
-    background-size: cover;
-    background-position: center top;
-    min-height: 300px;
-}
-
-#splashSection {
-    background-image: url(images/antique1.jpg);
-    background-position: center center;
-    height: 500px;
-}
-
-#splash2 {
-    background-image: url(images/antique5.jpg);
-}
-
-#splash3 {
-    background-image: url(images/antique3.jpg);
-}
-
-#splash4 {
-    background-image: url(images/antique4.jpg)
-}
-
-#splash5 {
-    background-image: url(images/antique6.jpg);
-}
-
-#splash6 {
-    background-image: url(images/antique2.jpg);
-}
-
-#antique-text-1,
-#antique-text-2 {
-    padding: 20px;
-    background-color: #ffe499;
-}
-
-/* === Add New CSS Below === */
-
-h1 {
-    font-family: 'Fredoka One', cursive;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-row-gap: 25px;
+h2 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 8pt;
+    line-height: 18pt;
+    color: #ffffff;
+    text-align: center;
+}
+
+*/===Background===*/ header {
+    background-color: #000000;
+}
+
+main {
+    background-color: #FFFFFF;
+}
+
+body {
+    background-color: #CDCDCD;
+}
+
+Footer {
+    background-color: #000000;
+}
+
+.splash {
+    background-size: cover;
+}
+
+*/===Box Model===*/ #splash {
+    height: 400px;
 }
 
 nav {
-    text-align: right;
+    padding: 20px;
 }
 
-#antiques {
+footer {
+    padding: 20px;
+}
+
+*/===Layout===*/ .floatleft {
+    float: left;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+
+main {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 75% 25%;
+
 }
 
-#splash2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+img {
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
-#splash3 {
-    grid-column-start: 1;
+p {
+    padding-left: 20px;
+    padding: 20px;
+}
+
+#splash {
+    grid-column grid-column-start: 1;
     grid-column-end: 3;
+
 }
 
-#splashSection {
-    display: flex;
-    align-items: flex-start;
-    align-items: center;
-    align-items: flex-end;
-    align-items: bottom;
+
+aside a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a {
+    margin-right: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+#advertisement {
+    background-color: #FF0000;
+    float: right;
 }
