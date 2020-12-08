@@ -1,115 +1,176 @@
-*/===Typography===*/ body {
+/* 
+
+=== FoodGo Lab ===
+
+Do not delete existing CSS
+
+*/
+
+/* == Typography == */
+
+body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 14pt;
     line-height: 18pt;
-    color: #000000;
-}
-
-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-
-}
-
-h1 {
-    font-family: font-family: 'Teko', sans-serif;
-    font-size: 72pt;
-    line-height: 18pt;
-    color: #000000;
 }
 
 h2 {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 30pt;
 }
 
+header,
 footer {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 8pt;
-    line-height: 18pt;
-    color: #ffffff;
-    text-align: center;
-}
-
-*/===Background===*/ header {
-    background-color: #000000;
-}
-
-main {
-    background-color: #FFFFFF;
-}
-
-body {
-    background-color: #CDCDCD;
-}
-
-Footer {
-    background-color: #000000;
-}
-
-.splash {
-    background-size: cover;
-}
-
-*/===Box Model===*/ #splash {
-    height: 400px;
-}
-
-nav {
-    padding: 20px;
-}
-
-footer {
-    padding: 20px;
-}
-
-*/===Layout===*/ .floatleft {
-    float: left;
-}
-
-#container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-}
-
-
-main {
-    display: grid;
-    grid-template-columns: 75% 25%;
-
-}
-
-img {
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-p {
-    padding-left: 20px;
-    padding: 20px;
-}
-
-#splash {
-    grid-column grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-
-
-aside a {
-    text-decoration: none;
-    color: #000000;
+    color: #b56441;
 }
 
 a {
-    margin-right: 20px;
+    text-decoration: none;
+    color: #b56441;
+    font-size: 14pt;
+}
+
+#legal {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+#nav a {
+    margin-right: 10px;
+}
+
+#nav a:hover {
+    color: #7d4700;
+}
+
+#splash {
+    text-align: center;
+    font-size: 48pt;
+    line-height: 60pt;
+    color: white;
+    text-shadow: 0px 0px 5px #6e6e6e;
+}
+
+footer {
+    font-style: italic;
+}
+
+/* Font Awesome icons */
+.fab {
+    font-size: 30pt;
+    margin-right: 10px;
+}
+
+.fab:hover {
+    color: ;
+}
+
+button {}
+
+/* == Background == */
+
+
+body {
+    background-color: #fcd303;
+}
+
+main {
+    background-color: #ffdd80;
+}
+
+#splash {
+    background-image: url(splash-backing.jpg);
+}
+
+/* == Box Model == */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    padding: 10px;
 }
 
 header {
+    padding: 20px;
+}
+
+button {
+    border: 0;
+    background-color: #b56441;
+    color: #fff;
+    padding: 20px;
+    font-size: 30pt;
+    margin-top: 15px;
+}
+
+footer {
+    padding-top: 50px;
+}
+
+#splash {
+    height: 400px;
+}
+
+#app {
+    height: 200px;
+}
+
+/* === Layout  === */
+
+
+/* = Grid =*/
+header,
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#app {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* = Flexbox = */
+
+#app,
+#splash {
+    display: flex;
+}
+
+#app,
+#splash {
+    align-items: center;
+    justify-content: center;
+}
+
+/* = Other = */
+
+* {
+    box-sizing: border-box;
+}
+
+#social-media {
+    text-align: right;
+}
+
+#app {
     text-align: center;
 }
 
-#advertisement {
-    background-color: #FF0000;
-    float: right;
+#mobile-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
 }
