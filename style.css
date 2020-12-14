@@ -46,6 +46,13 @@ a {
     text-decoration: none;
 }
 
+#support a {
+    color: #913ebc;
+    font-size: 12pt;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
 .safeexit {
     color: white !important;
 }
