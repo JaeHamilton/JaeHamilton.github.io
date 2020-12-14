@@ -1,176 +1,164 @@
-/* 
-
-=== FoodGo Lab ===
-
-Do not delete existing CSS
-
-*/
-
 /* == Typography == */
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24pt;
+    line-height: 10pt;
+    color: black;
+    text-align: center;
 
-body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14pt;
-    line-height: 18pt;
+}
+
+.SF {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12pt;
 }
 
 h2 {
-    font-size: 30pt;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16pt;
+    line-height: 7pt;
+
 }
 
-header,
-footer {
-    color: #b56441;
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12pt;
+    line-height: 10pt;
+}
+
+a {
+    font-size: 14pt;
+    line-height: 10pt;
+    font-family: 'Quicksand', sans-serif;
+    margin: 15px;
+    color: black;
+}
+
+#nav a {
+    color: black;
+    font-size: 14pt;
+}
+
+#homepage a {
+    color: #913ebc;
+    font-size: 12pt;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+.safeexit {
+    color: white !important;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12pt;
+}
+
+footer p {
+    font-size: 9pt;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+
+#covid p {
+    text-align: center;
+    font-size: 10pt;
+    line-height: 10pt;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* == background ==*/
+body {
+    background-color: #eee1e1;
+
+}
+
+#nav {
+    background-color: #93c47d;
+
+}
+
+.safeexit {
+    background-color: #913ebc;
+    padding: 10px;
+    padding-right: 10px;
+
+
 }
 
 a {
     text-decoration: none;
-    color: #b56441;
-    font-size: 14pt;
+    color: black;
 }
 
-#legal {
-    font-size: 10pt;
-    font-style: italic;
+
+.safeexit:hover {
+    color: #bfffac !Important;
 }
 
-#nav a {
-    margin-right: 10px;
+footer {
+    background-color: #64a8dc;
 }
 
-#nav a:hover {
-    color: #7d4700;
+#social {
+    background-color: #64a8dc;
+
 }
 
-#splash {
+#homepage a {
+    text-decoration: none;
+}
+}
+
+/* == Layout == */
+div {
     text-align: center;
-    font-size: 48pt;
-    line-height: 60pt;
-    color: white;
-    text-shadow: 0px 0px 5px #6e6e6e;
 }
 
-footer {
-    font-style: italic;
-}
-
-/* Font Awesome icons */
-.fab {
-    font-size: 30pt;
-    margin-right: 10px;
-}
-
-.fab:hover {
-    color: ;
-}
-
-button {}
-
-/* == Background == */
-
-
-body {
-    background-color: #fcd303;
-}
-
-main {
-    background-color: #ffdd80;
-}
-
-#splash {
-    background-image: url(splash-backing.jpg);
-}
-
-/* == Box Model == */
-
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
-footer {
-    padding: 10px;
-}
 
 header {
-    padding: 20px;
+    padding: 30px;
+    padding-bottom: 10px;
 }
 
-button {
-    border: 0;
-    background-color: #b56441;
-    color: #fff;
-    padding: 20px;
-    font-size: 30pt;
-    margin-top: 15px;
-}
 
 footer {
-    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%
 }
 
-#splash {
-    height: 400px;
+#nav {
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+
 }
 
-#app {
-    height: 200px;
-}
 
-/* === Layout  === */
-
-
-/* = Grid =*/
-header,
-footer {
+#involved {
     display: grid;
     grid-template-columns: 50% 50%;
+    column-gap: 45px;
 }
 
-main {
+#homepage {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 13px;
 }
 
-#app {
-    grid-column-start: 1;
-    grid-column-end: 4;
+footer {
+    margin-top: 20px;
 }
 
-#splash {
-    grid-column-start: 1;
-    grid-column-end: 4;
+#social {
+    padding: 15px;
 }
 
-/* = Flexbox = */
-
-#app,
-#splash {
-    display: flex;
-}
-
-#app,
-#splash {
-    align-items: center;
-    justify-content: center;
-}
-
-/* = Other = */
-
-* {
-    box-sizing: border-box;
-}
-
-#social-media {
-    text-align: right;
-}
-
-#app {
+.text {
     text-align: center;
-}
-
-#mobile-menu {
-    position: fixed;
-    top: 10px;
-    left: 10px;
 }
